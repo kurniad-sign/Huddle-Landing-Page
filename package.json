@@ -26,7 +26,7 @@
   "bugs": {
     "url": "https://github.com/kurniad-sign/Huddle-Landing-Page/issues"
   },
-  "homepage": "https://github.com/kurniad-sign/Huddle-Landing-Page#readme",
+  "homepage": "https://kurniad-sign.github.io/Huddle-Landing-Page/",
   "devDependencies": {
     "autoprefixer": "^9.4.9",
     "clean-css-cli": "^4.2.1",
