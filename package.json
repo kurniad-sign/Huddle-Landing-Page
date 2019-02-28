@@ -1,0 +1,38 @@
+{
+  "name": "huddle-landing_page",
+  "version": "1.0.0",
+  "description": "Huddle Landing Page with single column challange",
+  "main": "index.js",
+  "scripts": {
+    "autoprefixer-css": "postcss --use autoprefixer --map false --output dist/css/style.css dist/css/style.css",
+    "start": "node-sass scss/style.scss dist/css/style.css --watch",
+    "build-css": "node-sass --source-map true --output-style expanded scss/style.scss dist/css/style.css ",
+    "clear-css": "rimraf dist/css",
+    "cleancss-css": "cleancss -o dist/css/style.min.css dist/css/style.css",
+    "build": "npm run clear-css && npm run build-css && npm run autoprefixer-css && npm run cleancss-css",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kurniad-sign/Huddle-Landing-Page.git"
+  },
+  "keywords": [
+    "Huddle",
+    "Landing",
+    "Page"
+  ],
+  "author": "Agung Kurniadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kurniad-sign/Huddle-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/kurniad-sign/Huddle-Landing-Page#readme",
+  "devDependencies": {
+    "autoprefixer": "^9.4.9",
+    "clean-css-cli": "^4.2.1",
+    "gh-pages": "^2.0.1",
+    "node-sass": "^4.11.0",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3"
+  }
+}
