@@ -1,0 +1,11 @@
+@mixin mobile-vw {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin desktop-vw {
+  @media (min-width: $mobile) and (max-width: $desktop) {
+    @content;
+  }
+}

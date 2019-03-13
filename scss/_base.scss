@@ -1,0 +1,43 @@
+html {
+  font-size: 16px;
+  color: $text-color;
+  font-family: $font-body;
+  line-height: 1.6;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a:hover {
+  color: $dark-color;
+}
+
+a {
+  color: lighten($color: $dark-color, $amount: 20);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading;
+  color: $heading-color;
+  font-weight: $font-bold;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.4;
+}
+
+h2 {
+  font-size: 1.64em;
+}
